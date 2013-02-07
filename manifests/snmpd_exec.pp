@@ -1,5 +1,5 @@
 define snmp_rhel::snmpd_exec($job_name = $title, $command) {
-  require snmp_rhel
+  include snmp_rhel
 
   Exec {
     path => ["/usr/bin", "/usr/sbin", "/bin"],
